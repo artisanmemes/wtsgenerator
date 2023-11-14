@@ -27,7 +27,7 @@ $(function () {
             }
             const totalColorways = artisans.length
             var picks = []
-            for  (x = 0; x <= Math.floor(Math.random()*10); x++) {
+            for  (x = 0; x <= Math.floor(Math.random()*50   ); x++) {
                 let pick = rando(artisans)
                 // console.log(artisans[0].id, pick.id)
                 if (picks.some(el => el.id == pick.id)) {     
@@ -42,11 +42,11 @@ $(function () {
                 totalCost += cap.price
             })
             let output = ""
-            output += `<div class="">WTS<br> Good morning ${noun()}, I am looking to sell ${picks.length} artisan${(picks.length != 1) ? "s" : ""} for $${totalCost}. This is sadly due to ${reason1()} ${reason2()}.</div>`
+            output += `<div class=""><span class="big">WTS</span><br> Good morning ${noun()}, I am looking to sell ${picks.length} artisan${(picks.length != 1) ? "s" : ""} for $${totalCost}. This is sadly due to ${reason1()} ${reason2()}.</div>`
             output += "<br>"
-            output += "<div class='grid-container border'><div class='grid-x grid-margin-x small-up-4 medium-up-6'>"
+            output += "<div class='grid-container border'><div class='grid-x grid-margin-x small-up-4 medium-up-4 large-up-5'>"
             picks.forEach((cap) => {
-                output += `<div class="cell"><div class="card"><img src="${cap.image}"><div class="card-section">${cap.name}<br><h6>${cap.sculpt} - ${cap.colorway}</h6><br>$${cap.price}</div></div></div>`
+                output += `<div class="cell"><div class="card"><img src="${cap.image}"><div class="card-section">${cap.name}<br><span>${cap.sculpt} - ${cap.colorway}</span><div>$${cap.price}</div></div></div><br></div>`
             })
             output += "</div></div>"
             $('#main').html(`${output}`)
@@ -88,11 +88,11 @@ function noun() {
     return nouns[Math.floor(Math.random() * nouns.length)]
 }
 function reason1() {
-    const reasons = ["a fly looking at me", "my brother's sister's boyfriend needing dinner", "it raining"]
+    const reasons = ["a fly looking at me", "my brother's sister's boyfriend needing dinner", "it raining", "a sneeze", "a leaf falling outside "]
     return reasons[Math.floor(Math.random() * reasons.length)]
 }
 
 function reason2() {
-    const reasons = [" and I'm hungry", " and I'm out running", " and it's almost the holidays", ""]
+    const reasons = [" and I'm hungry", " and I'm out running", " and it's almost the holidays", " and I need to sell my family heirlooms", ""]
     return reasons[Math.floor(Math.random() * reasons.length)]
 }

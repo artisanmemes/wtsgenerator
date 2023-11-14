@@ -1,7 +1,13 @@
 body {
     background-color: darkgrey;
+    font-family: 'Pixelify Sans';
+    font-size: 1rem
 }
 
+.big {
+    font-family: 'Pixelify Sans';
+    font-size: 2rem
+}
 .footer {
     height: 50px;
     position: fixed;
