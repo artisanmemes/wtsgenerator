@@ -1,0 +1,14 @@
+body {
+    background-color: darkgrey;
+}
+
+.footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+}
+
