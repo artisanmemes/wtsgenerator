@@ -8,6 +8,12 @@ body {
     font-family: 'Pixelify Sans';
     font-size: 2rem
 }
+
+.bigger {
+    font-family: 'Pixelify Sans';
+    font-size: 3rem
+}
+
 .footer {
     height: 50px;
     position: fixed;
