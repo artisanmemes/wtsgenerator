@@ -2,7 +2,7 @@ $(function () {
     console.log("fart")
     document.getElementById("main").addEventListener("click", function () {
         copy()
-        alert("Copied!")
+        alert("Copied!\nDon't be dumb enough to actually use this in a sale post... or do")
     });
     var artisans = [];
     $.ajax({
