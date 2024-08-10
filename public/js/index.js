@@ -84,15 +84,15 @@ function randoPrice() {
 }
 
 function noun() {
-    const nouns = ["people", "everyone", "plebians", "cashcows"]
+    const nouns = ["people", "everyone", "plebians", "cashcows", "lovelaces"]
     return nouns[Math.floor(Math.random() * nouns.length)]
 }
 function reason1() {
-    const reasons = ["a fly looking at me", "my brother's sister's boyfriend needing dinner", "it raining", "a sneeze", "a leaf falling outside "]
+    const reasons = ["a fly looking at me", "my brother's sister's boyfriend needing dinner", "it raining", "a sneeze", "a leaf falling outside ", "the wind in Cuba"]
     return reasons[Math.floor(Math.random() * reasons.length)]
 }
 
 function reason2() {
-    const reasons = [" and I'm hungry", " and I'm out running", " and it's almost the holidays", " and I need to sell my family heirlooms", ""]
+    const reasons = [" and I'm hungry", " and I'm out running", " and it's almost the holidays", " and I need to sell my family heirlooms", " and I'm about to unsubscribe from Netflix", " and the squirrel outside is collecting nuts", " and my cook bot just stopped working",  ""]
     return reasons[Math.floor(Math.random() * reasons.length)]
 }
